@@ -1,6 +1,8 @@
 :root {
-	--dark: #046fac;
-	--light: #9bb9f7;
+	/* --dark: #046fac; */
+	/* --light: #9bb9f7; */
+	--dark: #3da3de;
+	--light: #bed3ff;
 }
 
 * {
@@ -13,6 +15,12 @@
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	background-position: center center;
+}
+
+.boardwarper {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
 }
 
 .boardwarper > div:first-child {
@@ -65,4 +73,15 @@
 
 .light {
 	background-color: var(--light);
+}
+
+.pieces {
+	cursor: grab;
+}
+.pieces:active {
+	cursor: grabbing;
+}
+
+.highlight {
+	background-color: blueviolet;
 }
